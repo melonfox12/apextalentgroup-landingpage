@@ -632,6 +632,118 @@ a {
   color: var(--text-muted);
 }
 
+/* ---------------------------------------- Founder */
+.founder {
+  background: var(--bg-elevated);
+}
+
+.founder-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+.founder-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.founder-photo-wrap {
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: radial-gradient(circle at 20% 0%, var(--accent-soft), var(--bg-card));
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+  margin-top: 2.25rem;
+}
+
+.founder-caption {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+}
+
+.founder-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.founder-copy h2 {
+  margin-top: 0.25rem;
+}
+
+.founder-body {
+  margin: 0 0 0.9rem;
+  font-size: 0.975rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 640px;
+}
+
+.founder-list {
+  margin: 0 0 1rem;
+  padding: 0 0 0 1.25rem;
+  list-style: none;
+}
+
+.founder-list li {
+  position: relative;
+  margin: 0 0 0.4rem;
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+}
+
+.founder-list li::before {
+  content: "";
+  position: absolute;
+  left: -1.25rem;
+  top: 0.55rem;
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+/* ---------------------------------------- Proof strip */
+.proof-strip {
+  background: var(--bg-base);
+}
+
+.proof-inner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.proof-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.proof-item {
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: radial-gradient(circle at 0% 0%, var(--accent-soft), rgba(15, 23, 42, 0.65));
+  box-shadow: 0 0 18px rgba(15, 23, 42, 0.7);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-subtle);
+  white-space: nowrap;
+}
+
 /* ---------------------------------------- Risk & stability */
 .risk-section {
   background: var(--bg-elevated);
@@ -1016,6 +1128,10 @@ a {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+}
+
+.apply-cta-wrap {
+  margin-top: 1.5rem;
 }
 
 .apply-form label {
